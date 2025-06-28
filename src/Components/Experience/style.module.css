@@ -1,0 +1,56 @@
+.experience{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #111416a6;
+    background-image: 
+    /* Gradiente 1: Mancha cian/magenta abajo a la derecha */
+    radial-gradient(
+        circle at 20% 85%, /* Posición del centro del círculo (x, y) */
+        #7575753d 0%,       /* Color inicial */
+        transparent 20%   /* Se vuelve transparente al 20% del radio */
+        ),
+        /* Gradiente 2: Mancha azul más clara en el centro-izquierda */
+        radial-gradient(
+            circle at 70% 20%, /* Posición */
+            #05a7b73d 0%,       /* Color inicial (azul con baja opacidad) */
+            transparent 20%   /* Se vuelve transparente al 20% */
+            );
+            background-repeat: no-repeat;
+        }
+        
+        .experienceBackground {
+            padding-block: 6rem;
+                min-height: 100vh;
+    height: auto;
+            backdrop-filter: blur(15rem);
+    width: 100%;
+    /* opacity: 0.9; */
+}
+
+.experienceContent{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    
+}
+
+.title{
+    text-align: center;   
+}
+
+.title h2 {
+    font-size: 3rem;
+    margin: 0;
+        background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabbed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

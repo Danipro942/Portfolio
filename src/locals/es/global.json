@@ -1,0 +1,108 @@
+{
+    "navbar": {
+        "menu": {
+            "home": "Inicio",
+            "aboutme": "Sobre Mi",
+            "experience": "Experiencia",
+            "contact": "Contacto"
+        }
+    },
+    "presentation": {
+        "Typewriter": {
+            "webdeveloper": "Desarrollador Web",
+            "datascientist": "Ciencia De Datos",
+            "aienthusiast": "Entusiasta en AI"
+        },
+        "description": "Desarrollador Web con ganas de innovar y mejorar cada día, con experiencia en Ciencia de Datos e Inteligencia Artificial.",
+        "buttons": {
+            "button1": "Mis Proyectos",
+            "button2": "Contactame"
+        }
+    },
+    "aboutme": {
+        "title": {
+            "main": "Sobre mí",
+            "subtitle": "Transformando Ideas en Aplicaciónes Reales"
+        },
+        "description": {
+            "name": "Daniel Hinestroza",
+            "role": "Ciencia de Datos y Desarrollador Web",
+            "paragraph1": "Soy un apasionado entusiasta de la tecnología con una gran curiosidad y creatividad desde la infancia. Me enamoré de la tecnología en el momento en que toqué una computadora, y esa pasión solo ha crecido.",
+            "paragraph2": "Empecé a programar a los 12 años y he construido varios proyectos para mostrar mis habilidades.",
+            "paragraph3": "Tengo una sólida experiencia en desarrollo web, servidores y bases de datos, y actualmente me estoy adentrando en el Machine Learning y la Ciencia de Datos. Mi viaje en la programación apenas está comenzando, y estoy emocionado por lo que sigue."
+        },
+        "download_cv": "Descargar mi CV",
+        "cards": {
+            "experience": {
+                "title": "6 Años de Experiencia",
+                "frontend": "Front-End",
+                "backend": "Back-End",
+                "data_science_ai": "Ciencia de Datos & IA"
+            },
+            "qualities": {
+                "title": "Cualidades",
+                "dreamer": "Soñador",
+                "creative": "Creativo",
+                "problem_solver": "Resolutivo"
+            },
+            "languages": {
+                "title": "Idiomas",
+                "english": "Inglés",
+                "fluent": "Fluido",
+                "spanish": "Español",
+                "native": "Nativo"
+            }
+        }
+    },
+    "experience": {
+        "title": {
+            "main": "Mi Experiencia",
+            "subtitle": "Estos son algunos de los proyectos que he construido a lo largo del tiempo."
+        },
+
+        "projects": {
+            "description1": "Creé este proyecto para reforzar las habilidades que había adquirido en el pasado. Después de mudarme a Estados Unidos, pasé un tiempo sin programar. Esta aplicación te permite consultar el clima en diferentes ciudades del mundo a través de una API. No pude agregar todas las funciones que quería porque no tenía la versión PRO, pero es una app que funciona bien.",
+            "description2": "Sin duda, esta aplicación me llena de orgullo y es uno de mis mayores proyectos, combinando toda la experiencia que he adquirido a lo largo de los años. Es una aplicación de mensajería en tiempo real que utiliza librerías propias como Express y Socket.io, para que puedas recibir mensajes en tiempo real de otras personas.",
+            "description3": "Esta es una aplicación de tareas (Todo Task) que combina tanto Front-End como Back-End. Es un proyecto de práctica, pero lo hice para probar mis habilidades de Back-End en ese momento.",
+            "description4": "Este fue uno de mis proyectos más grandes que hice cuando era joven. Lo realicé cuando tenía 14 años, y mi objetivo era crear un clon de WhatsApp donde pudieras enviar mensajes a otras personas a través de un número aleatorio que se creaba al registrar tu cuenta. Lamentablemente, no pude terminarlo al 100%, pero las funcionalidades básicas, como enviar mensajes en tiempo real, funcionan y muestran el conocimiento que tenía a esa edad.",
+            "description5": "Este es mi portafolio, un proyecto que definitivamente disfruté mucho durante el proceso, y donde traté de mostrar todo mi conocimiento en Diseño Web :D"
+        }
+        },
+        "tabsData": {
+            "projects": "Proyectos",
+            "skills": "Habilidades"
+        },
+        "skills": {
+            "languages": "Lenguajes",
+            "frontend": "Front-End",
+            "backend": "Back-End",
+            "ai&ml": "IA & ML",
+            "devops": "DevOps",
+            "database": "Base De Datos"
+        },
+    "contactme": {
+        "title": {
+            "main": "Contáctame",
+            "description": "¿Te gustó lo que viste y te gustaría contactarme? Solo envíame un correo electrónico o comunícate a través de mis redes sociales. Te responderé tan pronto como pueda."
+        },
+        "form": {
+            "name_label": "Nombre",
+            "name_placeholder": "Nombre Completo",
+            "email_label": "Correo Electrónico",
+            "email_placeholder": "ejemplo@desarrollador.com",
+            "message_label": "Mensaje",
+            "send_button": "Enviar Mensaje"
+        },
+        "social_media": {
+            "connect_title": "Conéctate conmigo",
+            "platform_prompt": "No dudes en contactarme en cualquiera de estas plataformas",
+            "twitter": "X (Twitter)",
+            "linkedin": "LinkedIn",
+            "github": "Github",
+            "email_prompt": "Prefieres el correo electrónico, contáctame en",
+            "email_address": "danisth02@gmail.com"
+        }
+    },
+
+    "footer": "All rights reserved."
+}

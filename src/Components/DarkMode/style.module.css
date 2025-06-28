@@ -1,0 +1,81 @@
+/* src/components/DarkMode.module.css (VERSIÓN CORREGIDA CON 'em') */
+
+/* Este contenedor solo posiciona. No debe tener tamaño ni font-size aquí. */
+.nightModeContainer {
+    /* El font-size se aplicará directamente desde el componente React */
+}
+
+.toggleLabel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Todas las unidades ahora son 'em' para que escalen con el font-size */
+    width: 6.25em;
+    height: 3.125em;
+    background-color: #353535; /* Día por defecto */
+    border-radius: 3.125em;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    user-select: none;
+    padding: 0 0.625em;
+    box-shadow: inset 0 0 0.3125em rgba(0,0,0,0.3);
+}
+
+.icon {
+    font-size: 1.5em; /* 'em' para que el icono escale también */
+    line-height: 1;
+    color: #fff;
+    transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img{
+            width: 1.3rem;
+        height: 1rem;
+        object-fit: cover;
+        border-radius: .1rem;
+}
+
+.slider {
+    position: absolute;
+    /* Todas las unidades en 'em' para que el slider y su posición escalen */
+    top: 0.3125em;
+    left: 0.3125em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 0.125em 0.3125em rgba(0,0,0,0.3);
+}
+
+/* --- ESTILOS PARA EL MODO NOCHE --- */
+
+.toggleLabel.night {
+    background-color: #1e2a56; /* Noche */
+}
+
+.toggleLabel.night .slider {
+    /* El desplazamiento también debe estar en 'em' para escalar correctamente */
+    transform: translateX(3.125em);
+}
+
+/* Por defecto, el sol está "encendido" */
+.moonIcon {
+    opacity: 0.5;
+}
+
+/* En modo noche, el sol se "apaga" y la luna se "enciende" */
+.toggleLabel.night .sunIcon {
+    opacity: 0.5;
+}
+
+.toggleLabel.night .moonIcon {
+    opacity: 1;
+}

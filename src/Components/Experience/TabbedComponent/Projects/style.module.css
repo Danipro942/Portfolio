@@ -1,0 +1,27 @@
+.projectsList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+@media (max-width: 1060px) {
+
+    .projectsList{
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 5rem;
+}
+    
+}
+
+@media (max-width: 750px) {
+    .projectsList{
+display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    }
+
+}

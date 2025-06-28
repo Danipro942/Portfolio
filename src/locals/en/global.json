@@ -1,0 +1,108 @@
+{
+    "navbar": {
+        "menu": {
+            "home": "Home",
+            "aboutme": "About Me",
+            "experience": "Experience",
+            "contact": "Contact"
+        }
+    },
+    "presentation": {
+        "Typewriter": {
+            "webdeveloper": "Web Developer",
+            "datascientist": "Data Scientist",
+            "aienthusiast": "AI Enthusiast"
+        },
+        "description": "A Web Developer eager to innovate and improve every day, with experience in Data Science and Artificial Intelligence.",
+        "buttons": {
+            "button1": "My Projects",
+            "button2": "Contact Me"
+        }
+    },
+    "aboutme": {
+        "title": {
+            "main": "About me",
+            "subtitle": "Transforming Ideas into Real Applications"
+        },
+        "description": {
+            "name": "Daniel Hinestroza",
+            "role": "Data Science & Web Developer",
+            "paragraph1": "I'm a passionate technology enthusiast with a strong curiosity and creativity since childhood. I fell in love with technology the moment I touched a computer, and that passion has only grown.",
+            "paragraph2": "I started programming at 12 and have built several projects to showcase my skills.",
+            "paragraph3": "I have solid experience in web development, servers, and databases, and I’m currently diving into Machine Learning and Data Science. My journey in programming is just getting started—and I’m excited for what’s next."
+        },
+        "download_cv": "Download my CV",
+        "cards": {
+            "experience": {
+                "title": "6 Years Of Experience",
+                "frontend": "Front-End",
+                "backend": "Back-End",
+                "data_science_ai": "Data Science & AI"
+            },
+            "qualities": {
+                "title": "Qualities",
+                "dreamer": "Dreamer",
+                "creative": "Creative",
+                "problem_solver": "Problem Solver"
+            },
+            "languages": {
+                "title": "Languages",
+                "english": "English",
+                "fluent": "Fluent",
+                "spanish": "Spanish",
+                "native": "Native"
+            }
+        }
+    },
+    "experience": {
+        "title": {
+            "main": "My Experience",
+            "subtitle": "These are some of the projects I've built over time."
+        },
+
+        "projects": {
+            "description1": "I created this project to reinforce the skills I had acquired in the past. After moving to the United States, I spent some time without coding. This project allows you to check the weather in different cities around the world through an API. I couldn't finish adding all the features I wanted because I didn't have the PRO version, but it's an app that works well.",
+            "description2": "This application undoubtedly fills me with pride and is one of my greatest projects, combining all the experience I have acquired over the years. It is a real-time messaging application that uses proprietary libraries such as Express and Socket.io, so you can receive messages in real time from other people.",
+            "description3": "This is a Todo Task app that combines both Front-End and Back-End. It's a practice project, but I made it to test my Back-End skills at that time.",
+            "description4": "This was one of my biggest projects that I made when I was young. I did it when I was 14 years old, and my goal was to create a WhatsApp clone where you could send messages to other people through a random number that was created when you registered your account. Unfortunately, I couldn't finish it 100%, but the basic functionalities, such as sending real-time messages, work and show the knowledge I had at that age.",
+            "description5": "This is my portfolio, a project that I definitely enjoyed a lot along the way, and where I tried to showcase all my knowledge in Web Design :D"
+        },
+        "tabsData": {
+            "projects": "Projects",
+            "skills": "Skills"
+        },
+        "skills": {
+            "languages": "Languages",
+            "frontend": "Front-End",
+            "backend": "Back-End",
+            "ai&ml": "AI & ML",
+            "devops": "DevOps",
+            "database": "Database"
+        }
+    },
+    "contactme": {
+        "title": {
+            "main": "Contact Me",
+            "description": "Did you like what you saw and would like to contact me? Just send me an email or reach out through my social networks. I will reply as soon as I can."
+        },
+        "form": {
+            "name_label": "Name",
+            "name_placeholder": "Full Name",
+            "email_label": "Email",
+            "email_placeholder": "example@developer.com",
+            "message_label": "Message",
+            "send_button": "Send Message"
+        },
+        "social_media": {
+            "connect_title": "Connect with me",
+            "platform_prompt": "Feel free to contact me on any of these platforms",
+            "twitter": "X (Twitter)",
+            "linkedin": "LinkedIn",
+            "github": "Github",
+            "email_prompt": "Prefer email? Reach me out at",
+            "email_address": "danisth02@gmail.com"
+        }
+    },
+    "footer": "Todos los derechos reservados."
+
+}

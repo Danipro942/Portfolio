@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 16px;
+}
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  color: #fff;
+}
+
+
+input, textarea{
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.container {
+  display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1283px; 
+}
+
+
+        /* --- CONFIGURACIÓN GENERAL --- */
+      
+
+      /* --- 1. FONDO DEL ESPACIO PROFUNDO --- */
+      #space-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+          z-index: -1;
+      }
+
+      /* --- 2. ESTRELLAS CON EFECTO DE PARALAJE --- */
+      .stars {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 1px;
+          background: transparent;
+          animation: move-stars linear infinite;
+      }
+
+      #stars1 {
+          box-shadow:
+              /* Grupo 1 */
+              50px 800px #FFF, 890px 200px #FFF, 1400px 600px #FFF, 600px 1100px #FFF, 200px 1800px #FFF, 1700px 1300px #FFF,
+              120px 300px #FFF, 1500px 900px #FFF, 300px 1500px #FFF, 1900px 400px #FFF, 750px 1700px #FFF, 1600px 100px #FFF,
+              900px 500px #FFF, 200px 1100px #FFF, 1100px 1900px #FFF, 400px 100px #FFF, 1800px 1600px #FFF, 650px 700px #FFF,
+              250px 1400px #FFF, 1300px 200px #FFF, 1750px 1000px #FFF, 550px 1600px #FFF, 1000px 600px #FFF, 1450px 300px #FFF,
+              /* Grupo 2 (duplicado con diferentes posiciones) */
+              80px 900px #FFF, 920px 300px #FFF, 1430px 700px #FFF, 630px 1200px #FFF, 230px 1900px #FFF, 1730px 1400px #FFF,
+              150px 400px #FFF, 1530px 1000px #FFF, 330px 1600px #FFF, 1930px 500px #FFF, 780px 1800px #FFF, 1630px 200px #FFF,
+              930px 600px #FFF, 230px 1200px #FFF, 1130px 2000px #FFF, 430px 200px #FFF, 1830px 1700px #FFF, 680px 800px #FFF,
+              280px 1500px #FFF, 1330px 300px #FFF, 1780px 1100px #FFF, 580px 1700px #FFF, 1030px 700px #FFF, 1480px 400px #FFF;
+          animation-duration: 150s;
+      }
+
+      #stars2 {
+          box-shadow:
+              /* Grupo 1 */
+              50px 1200px #FFF, 450px 400px #FFF, 1100px 900px #FFF, 1800px 300px #FFF, 1300px 1600px #FFF, 250px 500px #FFF,
+              700px 100px #FFF, 1650px 1400px #FFF, 150px 1700px #FFF, 1050px 350px #FFF, 1950px 800px #FFF, 350px 1900px #FFF,
+              1250px 700px #FFF, 850px 150px #FFF, 1750px 1150px #FFF, 550px 1300px #FFF, 1450px 550px #FFF, 950px 250px #FFF,
+              650px 1800px #FFF, 1150px 850px #FFF, 1900px 1500px #FFF, 450px 1050px #FFF, 1550px 1950px #FFF, 250px 950px #FFF,
+              /* Grupo 2 (duplicado con diferentes posiciones) */
+              80px 1300px #FFF, 480px 500px #FFF, 1130px 1000px #FFF, 1830px 400px #FFF, 1330px 1700px #FFF, 280px 600px #FFF,
+              730px 200px #FFF, 1680px 1500px #FFF, 180px 1800px #FFF, 1080px 450px #FFF, 1980px 900px #FFF, 380px 2000px #FFF,
+              1280px 800px #FFF, 880px 250px #FFF, 1780px 1250px #FFF, 580px 1400px #FFF, 1480px 650px #FFF, 980px 350px #FFF,
+              680px 1900px #FFF, 1180px 950px #FFF, 1930px 1600px #FFF, 480px 1150px #FFF, 1580px 2050px #FFF, 280px 1050px #FFF;
+          animation-duration: 100s;
+      }
+
+      #stars3 {
+          box-shadow:
+              /* Grupo 1 */
+              300px 300px #FFF, 700px 1400px #FFF, 1600px 700px #FFF, 1200px 100px #FFF, 1900px 1000px #FFF, 900px 1700px #FFF,
+              150px 900px #FFF, 1350px 200px #FFF, 1850px 1500px #FFF, 650px 450px #FFF, 250px 1950px #FFF, 1150px 650px #FFF,
+              1750px 1350px #FFF, 550px 750px #FFF, 950px 1950px #FFF, 1500px 1100px #FFF, 350px 550px #FFF, 1950px 250px #FFF,
+              850px 1650px #FFF, 1450px 950px #FFF, 450px 150px #FFF, 1050px 1250px #FFF, 1650px 450px #FFF, 750px 1050px #FFF,
+              /* Grupo 2 (duplicado con diferentes posiciones) */
+              330px 400px #FFF, 730px 1500px #FFF, 1630px 800px #FFF, 1230px 200px #FFF, 1930px 1100px #FFF, 930px 1800px #FFF,
+              180px 1000px #FFF, 1380px 300px #FFF, 1880px 1600px #FFF, 680px 550px #FFF, 280px 2050px #FFF, 1180px 750px #FFF,
+              1780px 1450px #FFF, 580px 850px #FFF, 980px 2050px #FFF, 1530px 1200px #FFF, 380px 650px #FFF, 1980px 350px #FFF,
+              880px 1750px #FFF, 1480px 1050px #FFF, 480px 250px #FFF, 1080px 1350px #FFF, 1680px 550px #FFF, 780px 1150px #FFF;
+          animation-duration: 50s;
+          animation-direction: reverse;
+      }
+
+      @keyframes move-stars {
+          from {
+              transform: translateY(0px);
+          }
+          to {
+              transform: translateY(-2000px);
+          }
+      }
+
+      /* --- 3. METEORITOS (SHOOTING STARS) --- */
+      .shooting-star {
+          position: absolute;
+          height: 2px;
+          background: linear-gradient(-45deg, rgba(146, 192, 255, 0.8), rgba(0, 0, 255, 0));
+          border-radius: 999px;
+          filter: drop-shadow(0 0 6px rgba(170, 200, 255, 0.5));
+          animation: shoot-down-right linear infinite;
+          transform-origin: left center;
+      }
+
+      @keyframes shoot-down-right {
+          0% {
+              transform: translateX(0) translateY(0) rotate(45deg);
+              opacity: 1;
+          }
+          70% {
+              opacity: 1;
+          }
+          100% {
+              transform: translateX(200vw) translateY(200vh) rotate(45deg);
+              opacity: 0;
+          }
+      }
+
+      /* "Aleatoriedad" en posiciones y retardos - ORÍGENES VARIADOS FUERA DE PANTALLA */
+      .shooting-star:nth-child(1) { top: 10%; left: -100vw; animation-delay: -3.7s; animation-duration: 3.0s; width: 200px; } /* Izquierda */
+      .shooting-star:nth-child(2) { top: -20%; left: 10vw; animation-delay: -5.2s; animation-duration: 4.0s; width: 150px; }  /* Arriba */
+      .shooting-star:nth-child(3) { top: 5%; left: -50vw; animation-delay: 0s; animation-duration: 3.5s; width: 250px; }   /* Izquierda */
+      .shooting-star:nth-child(4) { top: -5%; left: 30vw; animation-delay: -1.9s; animation-duration: 2.7s; width: 180px; }  /* Arriba */
+      .shooting-star:nth-child(5) { top: 30%; left: -80vw; animation-delay: -6.1s; animation-duration: 3.8s; width: 220px; } /* Izquierda */
+      .shooting-star:nth-child(6) { top: -30%; left: 50vw; animation-delay: -2.5s; animation-duration: 3.1s; width: 190px; }  /* Arriba */
+      .shooting-star:nth-child(7) { top: 15%; left: -30vw; animation-delay: -4.5s; animation-duration: 4.3s; width: 230px; } /* Izquierda */
+      .shooting-star:nth-child(8) { top: -15%; left: 70vw; animation-delay: -0.2s; animation-duration: 3.3s; width: 170px; }  /* Arriba */
+      .shooting-star:nth-child(9) { top: 40%; left: -120vw; animation-delay: -5.8s; animation-duration: 2.9s; width: 210px; } /* Izquierda */
+      .shooting-star:nth-child(10) { top: -25%; left: 90vw; animation-delay: -3.1s; animation-duration: 3.6s; width: 240px; } /* Arriba */
+      .shooting-star:nth-child(11) { top: 20%; left: -70vw; animation-delay: -1.2s; animation-duration: 4.1s; width: 160px; } /* Izquierda */
+      .shooting-star:nth-child(12) { top: -35%; left: 0vw; animation-delay: -4.9s; animation-duration: 3.4s; width: 205px; }  /* Arriba */
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+div{
+  margin: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #000;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p{
+  margin: 0 !important;
+
+}
+
+button {
+  border-radius: 4rem;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+      color: #ffffff;
+  outline: none;
+}
+
+button i{
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+:root {
+  --primary-color: #00e1ff;
+  --secondary-color: #0066ff;
+  --primary-gradient: linear-gradient(to right, #00e1ff, #0066ff);
+  --primary-gradient-button: linear-gradient(to right, #00e1ffa8, #0066ffa8);
+  --text-describe: #ffffffe8
+
+}
+.gradient-objects {
+  /* LA LÍNEA MÁS IMPORTANTE: 
+    Convierte este div en la "jaula" para nuestro ::before.
+  */
+  position: relative;
+
+  /*
+    Ahora el resto del código funcionará como esperas.
+    'display: inline-block' hace que el contenedor se ajuste al tamaño 
+    de su contenido (el texto + el padding).
+  */
+  display: inline-block;
+
+}
+
+.gradient-objects::before {
+  content: '';
+  opacity: .2;
+  /* Este 'absolute' ahora se posicionará relativo a '.gradient-objects'
+    porque es su "jaula" (position: relative).
+  */
+  position: absolute;
+  inset: 0; /* Ocupa el 100% del espacio de su jaula */
+  
+  /* El fondo y el desenfoque se aplican a esta capa */
+  background-image: var(--primary-gradient);
+  filter: blur(60px);
+  
+  /* Lo enviamos detrás del texto */
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+
+
+.gradient-objects-animation {
+  /* LA LÍNEA MÁS IMPORTANTE: 
+    Convierte este div en la "jaula" para nuestro ::before.
+  */
+  position: relative;
+
+  /*
+    Ahora el resto del código funcionará como esperas.
+    'display: inline-block' hace que el contenedor se ajuste al tamaño 
+    de su contenido (el texto + el padding).
+  */
+  display: inline-block;
+
+}
+
+.gradient-objects-animation::before {
+  content: '';
+  opacity: .2;
+  /* Este 'absolute' ahora se posicionará relativo a '.gradient-objects'
+    porque es su "jaula" (position: relative).
+  */
+  position: absolute;
+  inset: 0; /* Ocupa el 100% del espacio de su jaula */
+  
+  /* El fondo y el desenfoque se aplican a esta capa */
+  background-image: var(--primary-gradient);
+  filter: blur(30px);
+  
+  /* Lo enviamos detrás del texto */
+  z-index: -1;
+  border-radius: 50%;
+    animation: pulse 2s infinite alternate ease-in-out;
+
+}
+
+
+@keyframes pulse {
+  from {
+    opacity: 0.0; /* Starts with a lower opacity */
+  }
+  to {
+    opacity: 0.4; /* Reaches a higher opacity (brighter) */
+  }
+}
+

@@ -1,0 +1,206 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh);
+}
+
+.homeInfo{
+    display: flex;
+    /* justify-content: space-around; */
+    
+}
+
+
+.homeInfo p{
+    color: #ffffffb5;;
+    width: 60%;
+}
+
+.homeName{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.homeName span{
+    display: inline-block;
+    margin: 0;
+    height: 5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    /* color: rgba(150, 150, 150, 0.5); Texto semitransparente */
+
+
+}
+
+.homeName div:last-child div span{
+    background: var(--primary-gradient);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.photoContainer{
+    width: 80%;
+}
+
+.photo {
+    position: relative;
+    width: auto;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.photo svg{
+    width: 65%;
+    height: auto;
+}
+
+
+
+
+.typewriterContainer {
+    font-size: 1.5rem;
+}
+
+/* Icons */
+
+.mediaButton{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.mediaButton div > div{
+    color: #aaaaaa;
+    display: flex;
+    background-color: #2f2f2f4d;
+    padding: .7rem;
+    font-size: 2rem;
+    height: auto;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.mediaButton div > div:hover{
+    color: #ffffff;
+
+    background-color: #141414b6;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+
+.gradientObjectButtons {
+  /* LA LÍNEA MÁS IMPORTANTE: 
+    Convierte este div en la "jaula" para nuestro ::before.
+  */
+  position: relative;
+
+  /*
+    Ahora el resto del código funcionará como esperas.
+    'display: inline-block' hace que el contenedor se ajuste al tamaño 
+    de su contenido (el texto + el padding).
+  */
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+
+}
+
+.gradientObjectButtons::before {
+  content: '';
+  opacity: .2;
+  /* Este 'absolute' ahora se posicionará relativo a '.gradient-objects'
+    porque es su "jaula" (position: relative).
+  */
+  position: absolute;
+  inset: 0; /* Ocupa el 100% del espacio de su jaula */
+  
+  /* El fondo y el desenfoque se aplican a esta capa */
+  background-image: var(--primary-gradient);
+  filter: blur(1rem);
+  
+  /* Lo enviamos detrás del texto */
+  z-index: -1;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+
+}
+.gradientObjectButtons:hover::before {
+    opacity: 0.5;
+    filter: blur(.5rem);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Buttons */
+
+
+.options {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;   
+}
+
+.options button:nth-child(1) {
+    backdrop-filter: blur(1rem);
+    color: #ffffff;
+    background-image: linear-gradient(to right, #00e1ffb2, #0066ffb9);; 
+    font-weight: 600;
+    /* Mueve la transición aquí */
+    transition: all 0.3s ease-in-out;
+    padding: 0rem 2rem;
+}
+
+.options button:nth-child(1):hover {
+    background-color: var(--primary-gradient);
+    box-shadow: 0px 8px 14px 0px #00e1ff47;
+    transform: scale(1.1);
+}
+
+.options button:nth-child(2) {
+ /* 1. Define el grosor del borde y ponlo transparente. */
+ border: 2px solid transparent;
+
+ 
+ background-image: 
+     linear-gradient(to right, #1a1a1a, #1a1a1a), /* Fondo interior sólido (ajústalo al color que necesites) */
+     var(--primary-gradient);  /* Tu gradiente para el borde */
+ background-origin: border-box;
+
+ background-clip: padding-box, border-box;
+ transition: all 0.3s ease-in-out;
+
+}
+
+
+.options button:nth-child(2):hover {
+    background-color: var(--primary-gradient);
+    box-shadow: 0px 8px 14px 0px #00e1ff47;
+    transform: scale(1.1);
+    
+}
+
+
+
+@media (max-width: 855px) {
+.photoContainer{
+    display: none;
+}
+
+}

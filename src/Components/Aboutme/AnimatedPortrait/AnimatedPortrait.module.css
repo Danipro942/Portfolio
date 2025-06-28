@@ -1,0 +1,70 @@
+/* src/components/AnimatedPortrait.module.css (VERSIÓN FINAL CON ASPECT-RATIO) */
+
+:root {
+    --main-color: #00e1ff;
+    --background-color: #1a1a2e;
+    --animation-duration: 6s;
+}
+
+.portraitContainer {
+    position: relative;
+    /* Seguimos controlando el ancho con 'em' para que sea escalable */
+    width: 18.75em;
+    
+    /* === LA CORRECCIÓN CLAVE === */
+    /* Eliminamos la altura fija (height: 18.75em;) */
+    /* Y la reemplazamos con aspect-ratio. */
+    /* Esto le da al navegador una regla INQUEBRANTABLE:
+       "La altura de este elemento DEBE ser siempre igual a su anchura".
+       Así garantizamos un cuadrado perfecto, que luego se hace círculo. */
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+        
+.portraitImage {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2; /* Encima de los arcos */
+}
+
+/* El resto del código permanece idéntico */
+.portraitContainer::before,
+.portraitContainer::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1; /* Detrás de la imagen */
+    
+    background: conic-gradient(
+        transparent, 
+        transparent, 
+        transparent, 
+        var(--main-color)
+    );
+
+    animation: spin-border var(--animation-duration) linear infinite;
+}
+
+.portraitContainer::after {
+    animation-delay: calc(var(--animation-duration) / -2);
+}
+
+@keyframes spin-border {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

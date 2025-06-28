@@ -1,0 +1,105 @@
+
+
+/* --- Contenedor de las Pestañas --- */
+.tab-container {
+position: relative;
+    display: flex;
+    background-color: #353535c4;
+    border-radius: 3.125em;
+    padding: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 30%;
+    overflow: hidden;
+    backdrop-filter: blur(1rem);
+}
+
+/* --- Estilo de los Botones de Pestaña --- */
+.tab-button {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    padding: 0.75em 1.5625em; /* 12px/16px = 0.75em; 25px/16px = 1.5625em */
+    font-size: 1em; /* Relativo al font-size del .tab-container o del body */
+    cursor: pointer;
+    border-radius: 3.125em; /* Mismo radio que el contenedor */
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+    z-index: 2; /* Para que el texto esté por encima del slider */
+    white-space: nowrap;
+    outline: none;
+    /* Esto es clave: cada botón ocupa el mismo espacio */
+    flex: 1; /* Esto hace que cada botón ocupe un tercio del espacio disponible */
+    overflow: hidden; 
+    outline: none;
+}
+
+/* Estilo del texto del botón activo */
+.tab-button.active {
+    color: #ffffff;
+    font-weight: bold;
+     outline: none;
+}
+
+/* Efecto al pasar el ratón */
+.tab-button:hover:not(.active) {
+    color: #b0b0b0;
+     outline: none;
+}
+
+/* --- El Slider (el "circulito" o pastilla) --- */
+.slider {
+    position: absolute;
+    top: 0.5em; /* Coincide con el padding del contenedor */
+    height: calc(100% - 1em); /* Altura: 100% del contenedor menos el doble de padding */
+    background: var(--primary-gradient);
+    border-radius: 3.125em; /* Mismo radio que el contenedor */
+    /* Animación de rebote: ahora solo para la propiedad 'transform' */
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 1;
+    /* Ancho del slider fijo, asumiendo que los botones se dividen el espacio equitativamente */
+    width: calc(95% / 2 + 0.1em); /* <--- AJUSTADO PARA 2 PESTAÑAS */
+    opacity: .7;
+}
+
+/* --- Posicionamiento del Slider según la Pestaña Activa --- */
+/* Estas clases las aplicaremos desde React al slider */
+.slider.tab-projects {
+    transform: translateX(0%); /* No se mueve horizontalmente */
+}
+
+
+
+.slider.tab-skills {
+    /* Se mueve un 200% del ancho del slider */
+    transform: translateX(100%);
+}
+
+/* --- Contenedor del Contenido --- */
+.tab-content {
+    margin-top: 1.5em;
+    padding: 1em;
+    
+    color: #e0e0e0;
+    border-radius: 0.5em;
+    min-height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+}
+
+
+@media (max-width: 750px) {
+.tab-container {
+    width: 100%;
+    }
+
+}
