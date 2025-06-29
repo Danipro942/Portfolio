@@ -147,13 +147,25 @@ const NavbarMobile = ({
           </div>
         </div>
         <div className={style.media}>
-          <a href="">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/daniel-felipe-hinestroza-47969234a/"
+          >
             <RiTwitterXFill />
           </a>
-          <a href="">
+          <a
+            href="https://x.com/DanistTH"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin />
           </a>
-          <a href="">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Danipro942"
+          >
             <FaGithub />
           </a>
         </div>

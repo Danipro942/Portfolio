@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
         
 .portraitImage {
@@ -35,6 +36,22 @@
     object-fit: cover;
     z-index: 2; /* Encima de los arcos */
 }
+
+.portraitImage{
+    /* transform: scale(1.1); */
+    transition: transform 0.3s;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
 
 /* El resto del código permanece idéntico */
 .portraitContainer::before,

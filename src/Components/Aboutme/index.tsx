@@ -10,6 +10,8 @@ import English from "../../assets/flags/english.png";
 import Card from "./Card";
 import { useTranslation } from "react-i18next";
 
+import ME from "../../assets/img/me.png";
+
 type Props = {};
 
 const Aboutme = ({}: Props) => {
@@ -38,7 +40,7 @@ const Aboutme = ({}: Props) => {
             <div className={style.myself}>
               <div data-aos="fade-right" className={style.profile}>
                 <div className="gradient-objects-animation">
-                  <Portrait imageSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto-format&fit=crop" />
+                  <Portrait imageSrc={ME} />
                 </div>
               </div>
 

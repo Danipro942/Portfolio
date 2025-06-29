@@ -51,19 +51,46 @@ const Presentation = ({}: Props) => {
           </div>
           <p>{t("presentation.description")}</p>
           <div className={style.mediaButton}>
-            <div className={`${style.gradientObjectButtons}`}>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/daniel-felipe-hinestroza-47969234a/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className={`${style.gradientObjectButtons}`}
+            >
               <div>
                 <FaLinkedinIn />
               </div>
             </div>
 
-            <div className={`${style.gradientObjectButtons}`}>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://github.com/Danipro942",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className={`${style.gradientObjectButtons}`}
+            >
               <div>
                 <FaGithub />
               </div>
             </div>
 
-            <div className={`${style.gradientObjectButtons}`}>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://x.com/DanistTH",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className={`${style.gradientObjectButtons}`}
+            >
               <div>
                 <FaXTwitter />
               </div>

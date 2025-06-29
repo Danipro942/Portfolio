@@ -106,7 +106,16 @@ const ContactMe = ({}: Props) => {
               <span>{t("contactme.social_media.platform_prompt")}</span>
             </div>
             <div className={style.contactSocialMedia}>
-              <div className={style.platform}>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://x.com/DanistTH",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                className={style.platform}
+              >
                 <div className={style.icon}>
                   <i>
                     <RiTwitterXFill />
@@ -115,7 +124,16 @@ const ContactMe = ({}: Props) => {
                 <span>{t("contactme.social_media.twitter")}</span>
               </div>
 
-              <div className={style.platform}>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/daniel-felipe-hinestroza-47969234a/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                className={style.platform}
+              >
                 <div className={style.icon}>
                   <i>
                     <FaLinkedin />
@@ -124,7 +142,16 @@ const ContactMe = ({}: Props) => {
                 <span>{t("contactme.social_media.linkedin")}</span>
               </div>
 
-              <div className={style.platform}>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://github.com/Danipro942",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                className={style.platform}
+              >
                 <div className={style.icon}>
                   <i>
                     <FaGithub />
