@@ -36,6 +36,10 @@ input, textarea{
     max-width: 1283px; 
 }
 
+.errorField {
+  border: 2px solid #ff000081 !important;
+}
+
 
         /* --- CONFIGURACIÓN GENERAL --- */
       

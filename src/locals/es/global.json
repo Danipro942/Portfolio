@@ -88,6 +88,9 @@
         "form": {
             "name_label": "Nombre",
             "name_placeholder": "Nombre Completo",
+            "subject_label" : "Asunto",
+            "subject_placeholder" : "Asunto",
+
             "email_label": "Correo Electrónico",
             "email_placeholder": "ejemplo@desarrollador.com",
             "message_label": "Mensaje",
@@ -101,6 +104,11 @@
             "github": "Github",
             "email_prompt": "Prefieres el correo electrónico, contáctame en",
             "email_address": "danisth02@gmail.com"
+        },
+
+        "toast": {
+            "email_successfuly": "Enviado exitosamente",
+            "email_wrong": "Algo salió mal, intenta de nuevo más tarde"
         }
     },
 

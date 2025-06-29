@@ -5,10 +5,39 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { EmailForm, EmailFormSchema } from "../../Schemas/emailForm";
+
+import { toast } from "react-toastify";
+
+import axios from "axios";
+
 type Props = {};
 
 const ContactMe = ({}: Props) => {
   const { t } = useTranslation("global");
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<EmailForm>({
+    resolver: zodResolver(EmailFormSchema),
+  });
+
+  const onSubmit = async (data: EmailForm) => {
+    await axios
+      .put(`${import.meta.env.VITE_BACKEND_URL}/api/email/sendemail`, data)
+      .then((response) => {
+        console.log("Success:", response.data);
+        toast.success(t("contactme.toast.email_successfuly"));
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        toast.error(t("contactme.toast.email_wrong"));
+      });
+  };
 
   return (
     <section id="contactme" className={style.contactme}>
@@ -24,32 +53,47 @@ const ContactMe = ({}: Props) => {
             className={style.form}
             data-aos="fade-right"
           >
-            <form action="">
+            <form action="" onSubmit={handleSubmit(onSubmit)}>
               <label htmlFor="">{t("contactme.form.name_label")}</label>
               <input
+                className={errors.name ? "errorField" : ""}
+                {...register("name")}
                 type="text"
                 placeholder={t("contactme.form.name_placeholder")}
               />
 
+              <label htmlFor="">{t("contactme.form.subject_label")}</label>
+              <input
+                className={errors.subject ? "errorField" : ""}
+                {...register("subject")}
+                type="text"
+                placeholder={t("contactme.form.subject_placeholder")}
+              />
+
               <label htmlFor="">{t("contactme.form.email_label")}</label>
               <input
+                className={errors.email ? "errorField" : ""}
+                {...register("email")}
                 type="text"
                 placeholder={t("contactme.form.email_placeholder")}
               />
 
               <label htmlFor="">{t("contactme.form.message_label")}</label>
               <textarea
-                name=""
-                id=""
+                className={errors.message ? "errorField" : ""}
+                {...register("message")}
+                name="message"
+                id="message"
                 placeholder={t("contactme.form.message_label")}
               ></textarea>
+
+              <button type="submit">
+                <i>
+                  <IoIosSend />
+                </i>
+                {t("contactme.form.send_button")}
+              </button>
             </form>
-            <button>
-              <i>
-                <IoIosSend />
-              </i>
-              {t("contactme.form.send_button")}
-            </button>
           </div>
 
           <div

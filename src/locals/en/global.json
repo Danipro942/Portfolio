@@ -87,6 +87,9 @@
         },
         "form": {
             "name_label": "Name",
+            "subject_label" : "Subject",
+            "subject_placeholder" : "Subject",
+
             "name_placeholder": "Full Name",
             "email_label": "Email",
             "email_placeholder": "example@developer.com",
@@ -101,6 +104,11 @@
             "github": "Github",
             "email_prompt": "Prefer email? Reach me out at",
             "email_address": "danisth02@gmail.com"
+        },
+
+        "toast": {
+            "email_successfuly": "Sent Successfully",
+            "email_wrong": "Something went wrong, Try again later"
         }
     },
     "footer": "Todos los derechos reservados."

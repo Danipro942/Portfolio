@@ -11,6 +11,7 @@ import NavbarMobile from "../../Components/Navbar/NavbarMobile";
 import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
 import CopyRight from "../../Components/CopyRight";
+import { Bounce, ToastContainer } from "react-toastify";
 
 type Props = {};
 
@@ -55,6 +56,19 @@ const Home = ({}: Props) => {
   return (
     <Suspense fallback="Loading...">
       <div className={style.home}>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition={Bounce}
+        />
         <div id="space-background">
           <div id="stars1" className="stars"></div>
           <div id="stars2" className="stars"></div>
