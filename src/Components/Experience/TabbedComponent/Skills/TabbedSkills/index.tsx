@@ -141,7 +141,7 @@ const TabbedSkills = ({}: Props) => {
 
           <div className={`${styles.SkillList}`}>
             <img src={CSSLOGO} alt="React Logo" />
-            <span>HTML</span>
+            <span>CSS</span>
             <div className={styles.level}>
               <div className={`${styles.circle}  ${styles.activeCircle}`}></div>
               <div className={`${styles.circle}  ${styles.activeCircle}`}></div>
