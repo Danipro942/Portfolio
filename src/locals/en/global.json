@@ -65,7 +65,7 @@
             "description2": "This application undoubtedly fills me with pride and is one of my greatest projects, combining all the experience I have acquired over the years. It is a real-time messaging application that uses proprietary libraries such as Express and Socket.io, so you can receive messages in real time from other people.",
             "description3": "This is a Todo Task app that combines both Front-End and Back-End. It's a practice project, but I made it to test my Back-End skills at that time.",
             "description4": "This was one of my biggest projects that I made when I was young. I did it when I was 14 years old, and my goal was to create a WhatsApp clone where you could send messages to other people through a random number that was created when you registered your account. Unfortunately, I couldn't finish it 100%, but the basic functionalities, such as sending real-time messages, work and show the knowledge I had at that age.",
-            "description5": "This is my portfolio, a project that I definitely enjoyed a lot along the way, and where I tried to showcase all my knowledge in Web Design :D"
+            "description5": "This is my portfolio, a project that I definitely enjoyed a lot along the way, and where I tried to showcase all my knowledge in Web "
         },
         "tabsData": {
             "projects": "Projects",

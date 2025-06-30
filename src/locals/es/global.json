@@ -65,8 +65,7 @@
             "description2": "Sin duda, esta aplicación me llena de orgullo y es uno de mis mayores proyectos, combinando toda la experiencia que he adquirido a lo largo de los años. Es una aplicación de mensajería en tiempo real que utiliza librerías propias como Express y Socket.io, para que puedas recibir mensajes en tiempo real de otras personas.",
             "description3": "Esta es una aplicación de tareas (Todo Task) que combina tanto Front-End como Back-End. Es un proyecto de práctica, pero lo hice para probar mis habilidades de Back-End en ese momento.",
             "description4": "Este fue uno de mis proyectos más grandes que hice cuando era joven. Lo realicé cuando tenía 14 años, y mi objetivo era crear un clon de WhatsApp donde pudieras enviar mensajes a otras personas a través de un número aleatorio que se creaba al registrar tu cuenta. Lamentablemente, no pude terminarlo al 100%, pero las funcionalidades básicas, como enviar mensajes en tiempo real, funcionan y muestran el conocimiento que tenía a esa edad.",
-            "description5": "Este es mi portafolio, un proyecto que definitivamente disfruté mucho durante el proceso, y donde traté de mostrar todo mi conocimiento en Diseño Web :D"
-        }
+            "description5": "Este es mi portafolio, un proyecto que definitivamente disfruté mucho durante el proceso, y donde traté de mostrar todo mi conocimiento en Diseño Web"
         },
         "tabsData": {
             "projects": "Proyectos",
@@ -79,7 +78,8 @@
             "ai&ml": "IA & ML",
             "devops": "DevOps",
             "database": "Base De Datos"
-        },
+        }
+    },
     "contactme": {
         "title": {
             "main": "Contáctame",

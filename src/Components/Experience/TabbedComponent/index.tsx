@@ -25,7 +25,6 @@ const TabbedComponent = () => {
     },
   ];
 
-  // Función para manejar el clic en los botones
   const handleTabClick = (tabName: string) => {
     setActiveTab(tabName);
   };
@@ -33,7 +32,6 @@ const TabbedComponent = () => {
   return (
     <>
       <div className="tab-container" data-aos="fade-up">
-        {/* El slider ahora usa una clase dinámica para su posición */}
         <div className={`slider tab-${activeTab}`}></div>
 
         {tabsData.map((tab) => (
@@ -47,7 +45,6 @@ const TabbedComponent = () => {
         ))}
       </div>
 
-      {/* Contenido dinámico */}
       <div className="tab-content">
         {tabsData.find((tab) => tab.id === activeTab)?.content}
       </div>
