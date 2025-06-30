@@ -10,7 +10,7 @@ import English from "../../assets/flags/english.png";
 import Card from "./Card";
 import { useTranslation } from "react-i18next";
 
-import ME from "../../assets/img/me2.png";
+import ME from "../../assets/img/me3.jpeg";
 
 type Props = {};
 
