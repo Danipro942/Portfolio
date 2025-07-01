@@ -9,6 +9,7 @@ import Spanish from "../../assets/flags/spanish.svg";
 import English from "../../assets/flags/english.png";
 import Card from "./Card";
 import { useTranslation } from "react-i18next";
+import CV from "../../assets/cv/cv.pdf";
 
 import ME from "../../assets/img/me3.jpeg";
 
@@ -57,13 +58,14 @@ const Aboutme = ({}: Props) => {
                 </p>
               </div>
               <div data-aos="fade-down" className={style.downloadButton}>
-                <button>
-                  {" "}
-                  <i>
-                    <IoMdDownload />
-                  </i>
-                  {t("aboutme.download_cv")}
-                </button>
+                <a href={CV} target="_blank" rel="noopener noreferrer">
+                  <button>
+                    <i>
+                      <IoMdDownload />
+                    </i>
+                    {t("aboutme.download_cv")}
+                  </button>
+                </a>
               </div>
             </div>
             <div className={style.cardList}>

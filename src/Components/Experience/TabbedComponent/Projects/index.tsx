@@ -127,11 +127,47 @@ const Projects = ({}: Props) => {
             borderColor: "#feff00ba",
             colorText: "#f9ff00",
           },
+
           {
             bgColor: "#0069ff30",
             title: "TypeScript",
             borderColor: "#264de4",
             colorText: "#00b6ff",
+          },
+
+          {
+            bgColor: "#00ff4c33",
+            title: "Node.js",
+            borderColor: "#15ff00a8",
+            colorText: "#00ff39",
+          },
+
+          {
+            bgColor: "#f0f0f033",
+            title: "ExpressJS",
+            borderColor: "#000c",
+            colorText: "#fff",
+          },
+
+          {
+            bgColor: "#d500ff33",
+            title: "JWT",
+            borderColor: "#ff00facc",
+            colorText: "#ff45ef",
+          },
+
+          {
+            bgColor: "#f003",
+            title: "Mongoose",
+            borderColor: "#f00c",
+            colorText: "#ff0000cc",
+          },
+
+          {
+            bgColor: "#009f2f33",
+            title: "MongoDB",
+            borderColor: "#0a7500",
+            colorText: "#00ff39",
           },
         ]}
       />
