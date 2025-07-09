@@ -150,12 +150,12 @@ const NavbarMobile = ({
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/daniel-felipe-hinestroza-47969234a/"
+            href="https://x.com/DanistTH"
           >
             <RiTwitterXFill />
           </a>
           <a
-            href="https://x.com/DanistTH"
+            href="https://www.linkedin.com/in/daniel-hinestroza-mina/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -127,7 +127,7 @@ const ContactMe = ({}: Props) => {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/daniel-felipe-hinestroza-47969234a/",
+                    "https://www.linkedin.com/in/daniel-hinestroza-mina/",
                     "_blank",
                     "noopener,noreferrer"
                   )
