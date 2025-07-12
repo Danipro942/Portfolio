@@ -246,6 +246,7 @@ const Projects = ({}: Props) => {
         description={t("experience.projects.description5")}
         delayanimation={500}
         image={Porfolio}
+        urlfront="https://github.com/Danipro942/Portfolio"
         links={{ frontEnd: true, backEnd: false, liveDemo: false }}
         technologies={[
           {
